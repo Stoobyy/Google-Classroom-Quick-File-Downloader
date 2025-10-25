@@ -1,0 +1,16 @@
+.quick-download {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 3px 6px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+.quick-download:hover {
+  background: #0b59d0;
+}

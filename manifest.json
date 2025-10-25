@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Classroom Quick Downloader",
+  "version": "1.0",
+  "description": "Adds a quick download button to each Google Classroom file.",
+  "permissions": ["downloads", "activeTab", "scripting"],
+  "host_permissions": ["https://classroom.google.com/*", "https://drive.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://classroom.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+  "service_worker": "background.js"
+}
+}
